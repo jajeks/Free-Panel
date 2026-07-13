@@ -1046,8 +1046,8 @@ body.lang-en .about-message-box::after{left:auto;right:0;border-radius:0 4px 4px
                     </div>
                     <div class="default-pass-box">
                         <span class="pass-label">🔑 رمز پیش‌فرض:</span>
-                        <span class="pass-value">DARK1234</span>
-                        <button class="copy-pass-btn" onclick="copyText2('DARK1234')">📋 کپی رمز</button>
+                        <span class="pass-value">X4GHUB</span>
+                        <button class="copy-pass-btn" onclick="copyText2('X4GHUB')">📋 کپی رمز</button>
                     </div>
                     <p style="color:var(--warning);font-size:11px;margin-top:10px;">⚠️ رمز را حتماً یادداشت کنید!</p>
                 </div>
@@ -1814,7 +1814,7 @@ function createConfig(){
     var chosenConfig=loc.configs[selectedConfigIndex];
     var id=generateId();var now=new Date();
     var expiry=selectedDuration===-1?null:new Date(now.getTime()+selectedDuration*86400000);
-    var configPass=customPass||'DARK1234';
+    var configPass=customPass||'X4GHUB';
     var configObj={id:id,username:username,note:note,location:selectedLocation,locationName:loc.name,locationFlag:loc.flag,configName:chosenConfig.name,volume:selectedVolume,volumeUsed:0,duration:selectedDuration,userLimit:selectedUserLimit,config:chosenConfig.value,configPassword:configPass,createdAt:now.toISOString(),expiryAt:expiry?expiry.toISOString():null,status:'active',devices:[],subLink:generateSubLink(id)};
     configs.push(configObj);saveConfigs();updateStats();
     showNotification('کانفیگ با موفقیت ساخته شد! ✅','success');
@@ -2145,7 +2145,7 @@ function renderGuide(){
     guideStep(1,'👤',isFA?'نام کاربری':'Username',isFA?'مرحله اول':'Step 1',isFA?'<p>یک نام دلخواه وارد کنید</p>':'<p>Enter any name you want</p>')+
     guideStep(2,'📊',isFA?'حجم و زمان':'Volume & Duration',isFA?'مرحله دوم':'Step 2',isFA?'<p>حجم، مدت زمان و تعداد کاربر را انتخاب کنید. میتوانید از گزینه دلخواه هم استفاده کنید</p>':'<p>Select volume, duration and user limit. You can use custom option too</p>')+
     guideStep(3,'🌍',isFA?'لوکیشن':'Location',isFA?'مرحله سوم':'Step 3',isFA?'<p>لوکیشن‌های سبز کانفیگ دارند. خاکستری ندارند.</p><div class="warn-box"><span class="warn-icon">⚠️</span><span class="warn-text">فقط لوکیشن‌های سبز قابل انتخابند</span></div>':'<p>Green locations have configs. Gray ones don\'t.</p>')+
-    guideStep(4,'🔐',isFA?'رمز عبور':'Password',isFA?'مرحله چهارم':'Step 4',isFA?'<p>رمز پیش‌فرض: <span class="highlight-text">DARK1234</span></p><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">رمز را حتماً ذخیره کنید!</span></div>':'<p>Default: <span class="highlight-text">DARK1234</span></p><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">Save the password!</span></div>')+
+    guideStep(4,'🔐',isFA?'رمز عبور':'Password',isFA?'مرحله چهارم':'Step 4',isFA?'<p>رمز پیش‌فرض: <span class="highlight-text">X4GHUB</span></p><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">رمز را حتماً ذخیره کنید!</span></div>':'<p>Default: <span class="highlight-text">X4GHUB</span></p><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">Save the password!</span></div>')+
     guideStep(5,'⚡',isFA?'ساخت':'Create',isFA?'مرحله نهایی':'Final step',isFA?'<p>دکمه ساخت را بزنید. کانفیگ و لینک ساب نمایش داده میشود.</p><div class="tip-box"><span class="tip-icon">🎉</span><span class="tip-text">تبریک! کانفیگ ساخته شد!</span></div>':'<p>Click create button. Config and sub link will be shown.</p><div class="tip-box"><span class="tip-icon">🎉</span><span class="tip-text">Congratulations!</span></div>')+
     '</div>'+
     '<div class="guide-section" id="guide-manage">'+
@@ -2154,7 +2154,7 @@ function renderGuide(){
     '</div>'+
     '<div class="guide-section" id="guide-faq">'+
     guideFAQ('❓',isFA?'رمز ورود چیست؟':'Login password?',isFA?'<strong>X4GHUB</strong>':'<strong>X4GHUB</strong>')+
-    guideFAQ('🔐',isFA?'رمز کانفیگ چیست؟':'Config password?',isFA?'پیش‌فرض <strong>DARK1234</strong>':'Default <strong>DARK1234</strong>')+
+    guideFAQ('🔐',isFA?'رمز کانفیگ چیست؟':'Config password?',isFA?'پیش‌فرض <strong>X4GHUB</strong>':'Default <strong>X4GHUB</strong>')+
     guideFAQ('🌍',isFA?'چه لوکیشن‌هایی موجود است؟':'Available locations?',isFA?'تمام اروپا + ترکیه، امارات، کره جنوبی، قطر':'All Europe + Turkey, UAE, South Korea, Qatar')+
     guideFAQ('📱',isFA?'چگونه استفاده کنم؟':'How to use?',isFA?'کپی کنید و در <strong>v2rayNG</strong> یا <strong>Streisand</strong> وارد کنید':'Copy and import into <strong>v2rayNG</strong> or <strong>Streisand</strong>')+
     guideFAQ('🆓',isFA?'رایگان است؟':'Is it free?',isFA?'بله! کاملاً رایگان. لطفاً نفروشید.':'Yes! Completely free. Don\'t sell.')+
@@ -2338,7 +2338,7 @@ fa: {
         {n:5,e:"👥",t:"تعداد کاربر همزمان",d:"چند دستگاه همزمان",c:`<p>تعداد دستگاه‌هایی که همزمان متصل می‌شوند:</p><ul><li><span class="li-icon">📱</span> گزینه‌ها: <span class="highlight-text">1, 2, 3, 5, 10</span></li><li><span class="li-icon">♾️</span> <span class="success-text">نامحدود</span></li><li><span class="li-icon">✏️</span> <span class="warning-text">دلخواه:</span> عدد دلخواه (1 تا 999)</li></ul><div class="tip-box"><span class="tip-icon">💡</span><span class="tip-text">مثلاً 3 یعنی 3 گوشی همزمان متصل باشند</span></div>`},
         {n:6,e:"🌍",t:"انتخاب لوکیشن",d:"کشور سرور",c:`<p>لوکیشن مورد نظر را انتخاب کنید:</p><ul><li><span class="li-icon">🗂️</span> فیلتر: <span class="highlight-text">همه / اروپا / آسیا</span></li><li><span class="li-icon">🔍</span> جستجوی نام کشور</li><li><span class="li-icon">✅</span> <span class="success-text">سبز</span> = کانفیگ دارد</li><li><span class="li-icon">❌</span> خاکستری = کانفیگ ندارد</li><li><span class="li-icon">👆</span> روی کشور مورد نظر کلیک کنید</li></ul><div class="warn-box"><span class="warn-icon">⚠️</span><span class="warn-text">فقط لوکیشن‌های سبز قابل انتخابند</span></div>`},
         {n:7,e:"⚙️",t:"انتخاب کانفیگ",d:"از بین کانفیگ‌های موجود",c:`<p>اگر لوکیشن چند کانفیگ داشته باشد:</p><ul><li><span class="li-icon">📋</span> لیست کانفیگ‌ها با نام و نوع پروتکل نمایش داده می‌شود</li><li><span class="li-icon">👆</span> روی کانفیگ مورد نظر کلیک کنید</li></ul><div class="tip-box"><span class="tip-icon">💡</span><span class="tip-text">اگر فقط یک کانفیگ باشد خودکار انتخاب می‌شود</span></div>`},
-        {n:8,e:"🔐",t:"رمز عبور کانفیگ",d:"محافظت با رمز",c:`<p>رمز عبور برای محافظت از کانفیگ:</p><ul><li><span class="li-icon">🔑</span> رمز پیش‌فرض: <span class="highlight-text">DARK1234</span></li><li><span class="li-icon">✏️</span> یا رمز دلخواه وارد کنید</li><li><span class="li-icon">📋</span> دکمه کپی رمز را بزنید</li></ul><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">رمز را حتماً یادداشت کنید! بدون رمز دسترسی ممکن نیست</span></div>`},
+        {n:8,e:"🔐",t:"رمز عبور کانفیگ",d:"محافظت با رمز",c:`<p>رمز عبور برای محافظت از کانفیگ:</p><ul><li><span class="li-icon">🔑</span> رمز پیش‌فرض: <span class="highlight-text">X4GHUB</span></li><li><span class="li-icon">✏️</span> یا رمز دلخواه وارد کنید</li><li><span class="li-icon">📋</span> دکمه کپی رمز را بزنید</li></ul><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">رمز را حتماً یادداشت کنید! بدون رمز دسترسی ممکن نیست</span></div>`},
         {n:9,e:"⚡",t:"ساخت نهایی",d:"کلیک روی دکمه ساخت",c:`<p>در انتها:</p><ul><li><span class="li-icon">🟢</span> دکمه <span class="success-text">⚡ ساخت کانفیگ</span> را بزنید</li><li><span class="li-icon">📋</span> کانفیگ و اطلاعات کامل نمایش داده می‌شود</li><li><span class="li-icon">📋</span> دکمه <span class="highlight-text">کپی کانفیگ</span> برای کپی کردن</li><li><span class="li-icon">🔗</span> <span class="highlight-text">لینک سابسکریپشن</span> برای اشتراک‌گذاری</li><li><span class="li-icon">🔐</span> <span class="warning-text">رمز عبور</span> نمایش داده می‌شود</li></ul><div class="tip-box"><span class="tip-icon">🎉</span><span class="tip-text">تبریک! کانفیگ ساخته شد. در اپلیکیشن VPN وارد کنید</span></div>`},
     ],
     guideManage:[
@@ -2358,7 +2358,7 @@ fa: {
     ],
     guideFAQ:[
         {i:"❓",q:"رمز عبور ورود چیست؟",a:"رمز پیش‌فرض <strong>X4GHUB</strong> است."},
-        {i:"🔐",q:"رمز عبور کانفیگ چیست؟",a:"رمز پیش‌فرض <strong>DARK1234</strong> است. می‌توانید رمز دلخواه تعیین کنید."},
+        {i:"🔐",q:"رمز عبور کانفیگ چیست؟",a:"رمز پیش‌فرض <strong>X4GHUB</strong> است. می‌توانید رمز دلخواه تعیین کنید."},
         {i:"🌍",q:"چه لوکیشن‌هایی موجود است؟",a:"تمام کشورهای اروپایی + ترکیه، امارات، کره جنوبی و قطر."},
         {i:"📊",q:"حجم نامحدود یعنی چه؟",a:"بدون محدودیت مصرف داده."},
         {i:"👥",q:"تعداد کاربر یعنی چه؟",a:"تعداد دستگاه‌هایی که همزمان متصل باشند."},
@@ -2457,7 +2457,7 @@ en: {
         {n:5,e:"👥",t:"Simultaneous Users",d:"Concurrent devices",c:`<p>Number of simultaneous connections:</p><ul><li><span class="li-icon">📱</span> Options: <span class="highlight-text">1, 2, 3, 5, 10</span></li><li><span class="li-icon">♾️</span> <span class="success-text">Unlimited</span></li><li><span class="li-icon">✏️</span> <span class="warning-text">Custom:</span> Any number (1-999)</li></ul>`},
         {n:6,e:"🌍",t:"Select Location",d:"Server country",c:`<p>Select your desired location:</p><ul><li><span class="li-icon">🗂️</span> Filter: <span class="highlight-text">All / Europe / Asia</span></li><li><span class="li-icon">🔍</span> Search by country name</li><li><span class="li-icon">✅</span> <span class="success-text">Green</span> = Has configs</li><li><span class="li-icon">❌</span> Gray = No configs</li></ul><div class="warn-box"><span class="warn-icon">⚠️</span><span class="warn-text">Only green locations can be selected</span></div>`},
         {n:7,e:"⚙️",t:"Select Config",d:"Choose from available",c:`<p>If location has multiple configs:</p><ul><li><span class="li-icon">📋</span> Config list with names and protocols shown</li><li><span class="li-icon">👆</span> Click the desired config</li></ul><div class="tip-box"><span class="tip-icon">💡</span><span class="tip-text">If only one config exists, it's auto-selected</span></div>`},
-        {n:8,e:"🔐",t:"Config Password",d:"Password protection",c:`<p>Password to protect your config:</p><ul><li><span class="li-icon">🔑</span> Default: <span class="highlight-text">DARK1234</span></li><li><span class="li-icon">✏️</span> Or enter a custom password</li></ul><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">Save the password! You need it to view the config later</span></div>`},
+        {n:8,e:"🔐",t:"Config Password",d:"Password protection",c:`<p>Password to protect your config:</p><ul><li><span class="li-icon">🔑</span> Default: <span class="highlight-text">X4GHUB</span></li><li><span class="li-icon">✏️</span> Or enter a custom password</li></ul><div class="danger-box"><span class="danger-icon">🚨</span><span class="danger-text">Save the password! You need it to view the config later</span></div>`},
         {n:9,e:"⚡",t:"Final Creation",d:"Click create button",c:`<p>Finally:</p><ul><li><span class="li-icon">🟢</span> Click <span class="success-text">⚡ Create Config</span></li><li><span class="li-icon">📋</span> Config details will be displayed</li><li><span class="li-icon">🔗</span> Subscription link is copyable</li><li><span class="li-icon">🔐</span> Save the password!</li></ul><div class="tip-box"><span class="tip-icon">🎉</span><span class="tip-text">Congratulations! Import into your VPN app</span></div>`},
     ],
     guideManage:[
@@ -2477,7 +2477,7 @@ en: {
     ],
     guideFAQ:[
         {i:"❓",q:"What is the login password?",a:"Default password is <strong>X4GHUB</strong>."},
-        {i:"🔐",q:"What is the config password?",a:"Default is <strong>DARK1234</strong>. You can set a custom one."},
+        {i:"🔐",q:"What is the config password?",a:"Default is <strong>X4GHUB</strong>. You can set a custom one."},
         {i:"🌍",q:"What locations are available?",a:"All European countries + Turkey, UAE, South Korea, and Qatar."},
         {i:"📊",q:"What does unlimited volume mean?",a:"No data usage limit whatsoever."},
         {i:"👥",q:"What does user limit mean?",a:"Number of devices that can connect simultaneously."},
