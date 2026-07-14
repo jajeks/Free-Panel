@@ -1,12 +1,12 @@
 <div align="center">
 
-# ⚡ X4GHUB
+# ⚡ Caspian 4
 
 ### پنل حرفه‌ای ساخت و مدیریت کانفیگ
 
 یک پنل تحت وب، سبک و کاملاً رایگان — بدون نیاز به نصب یا سرور جداگانه، فقط با یک فایل HTML.
 
-[![Telegram](https://img.shields.io/badge/Telegram-X4GHUB-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.me/PV_Golestaneh)
+[![Telegram](https://img.shields.io/badge/Telegram-Caspian-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.me/PV_Golestaneh)
 
 
 ### 🌐 [مشاهده دمو زنده پنل](https://x4gking.github.io/Free-Panel/)
