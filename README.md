@@ -6,8 +6,8 @@
 
 یک پنل تحت وب، سبک و کاملاً رایگان — بدون نیاز به نصب یا سرور جداگانه، فقط با یک فایل HTML.
 
-[![Telegram](https://img.shields.io/badge/Telegram-X4GHUB-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.me/X4GHUB)
-[![YouTube](https://img.shields.io/badge/YouTube-X4GHUB-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@X4GHUB)
+[![Telegram](https://img.shields.io/badge/Telegram-X4GHUB-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.me/PV_Golestaneh)
+
 
 ### 🌐 [مشاهده دمو زنده پنل](https://x4gking.github.io/Free-Panel/)
 
@@ -17,7 +17,7 @@
 
 ## 📌 درباره پروژه
 
-**X4GHUB** یه پنل مدیریت کانفیگ با ظاهر مدرن و کاربری آسونه. تمام امکانات ساخت، مدیریت و اشتراک‌گذاری کانفیگ‌ها داخل یک فایل قرار داره؛ کافیه فایل رو باز کنی و شروع کنی.
+**Caspian panel 4** یه پنل مدیریت کانفیگ با ظاهر مدرن و کاربری آسونه. تمام امکانات ساخت، مدیریت و اشتراک‌گذاری کانفیگ‌ها داخل یک فایل قرار داره؛ کافیه فایل رو باز کنی و شروع کنی.
 
 ## ✨ امکانات
 
@@ -33,7 +33,7 @@
 
 ## 🚀 شروع سریع
 
-**ساده‌ترین راه:** مستقیم از دمو زنده استفاده کن → [x4gking.github.io/Free-Panel](https://x4gking.github.io/Free-Panel/)
+**ساده‌ترین راه:** مستقیم از دمو زنده استفاده کن → [](https://x4gking.github.io/Free-Panel/)
 
 یا به‌صورت محلی:
 
@@ -51,10 +51,8 @@
 اگه این پروژه به کارت اومد، از طریق لینک‌های زیر همراه ما باش:
 
 - 📢 **کانال تلگرام:** [telegram.me/X4GHUB](https://telegram.me/X4GHUB)
-- 📺 **یوتیوب:** [youtube.com/@X4GHUB](https://www.youtube.com/@X4GHUB)
-
 <div align="center">
 
-❤️ ساخته شده با عشق توسط تیم X4G
+❤️ ساخته شده با عشق توسط تیم Caspian
 
 </div>
